@@ -2,7 +2,7 @@ package co.k42.openrazerlib.test;
 
 
 import co.k42.openrazerlib.Effect;
-import co.k42.openrazerlib.RazerMice;
+import co.k42.openrazerlib.MouseManager;
 import co.k42.openrazerlib.RazerMouse;
 
 import java.io.IOException;
@@ -12,12 +12,11 @@ import java.util.Iterator;
 public class ColorCycle {
 
     public static void main(String[] args) {
-        RazerMice mouseManager = new RazerMice();
+        MouseManager mouseManager = new MouseManager();
         Collection<RazerMouse> mice = mouseManager.getMice();
         Iterator<RazerMouse> mouseIterator = mice.iterator();
         RazerMouse mouse = mouseIterator.next();
 
-        mouse.setLogoEffect(Effect.SOLID_COLOR);
         mouse.setScrollEffect(Effect.SOLID_COLOR);
 
         try {

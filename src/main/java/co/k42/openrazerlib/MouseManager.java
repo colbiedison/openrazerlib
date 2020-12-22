@@ -5,12 +5,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class RazerMice {
+public class MouseManager {
     Collection<RazerMouse> mice;
     File razerMouseDir;
     File[] razerMouseDirFolders;
 
-    public RazerMice() {
+    public MouseManager() {
         mice = new ArrayList<RazerMouse>() {
             {
                 add(new RazerMouse(new File("")));

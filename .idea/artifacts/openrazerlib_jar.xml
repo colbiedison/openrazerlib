@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="openrazerlib:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/openrazerlib_jar</output-path>
+    <root id="archive" name="openrazerlib.jar">
+      <element id="module-output" name="openrazerlib" />
+      <element id="module-test-output" name="openrazerlib" />
+    </root>
+  </artifact>
+</component>
